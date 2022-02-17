@@ -1,0 +1,7 @@
+Numbers descend based on content order (1 = first image on the page I want seen)
+
+about - biography page photos
+EMPHY - Emphysys handpiece
+OVR - Project Overseer
+CLICK - Project Click 2.0
+GTO - Pontiac GTO '67
