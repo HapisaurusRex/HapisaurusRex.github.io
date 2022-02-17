@@ -10,4 +10,6 @@ body{
 }
 .main-project-photo{
     margin: auto;
+    width: 40%;
+    height: auto;
 }
