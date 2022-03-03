@@ -19,7 +19,6 @@ ul.nav-links{
     padding: 0;
     margin: 0;
 }
-
 li.nav-links{
     list-style-type: none;
     display: inline;
@@ -48,15 +47,16 @@ li.nav-links{
 
 .summary-grid{
     display: grid;
-    grid-template-areas: 'headliner headliner headliner' 'photo photo photo' 'objectives challenges results';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25vh 75vh 2fr;
-    grid-gap: 1rem;
+    grid-template-areas: 'headliner headliner headliner headliner' 'photo photo photo photo' 'objectives objectives challenges challenges' 'results results results results';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    margin: 3rem;
 }
 .headliner{
     text-transform: capitalize;
     grid-area: headliner;
 }
+
 figure.cover{
     grid-area: photo;
 }
@@ -66,12 +66,15 @@ figure.cover{
 }
 .objectives{
     grid-area: objectives;
+    text-align:left;
 }
 .challenges{
     grid-area: challenges;
+    text-align:left;
 }
 .results{
     grid-area: results;
+    text-align:left;
 }
 
 .link-button{

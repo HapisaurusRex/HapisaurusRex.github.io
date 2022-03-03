@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ANSYS Engine Block </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class = "page" href="../index.html"> daniel shah </a>
+                <ul class="nav-links">
+                    <li class="nav-links"><a class = "page" href= "../about.html"> about me </a>                    </li>
+                    <li class="nav-links"><a class = "page selected" href="../List_Of_Projects.html"> projects </a> </li>
+                    <li class="nav-links"><a class = "page" href="../contact.html"> contact </a>                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="summary-grid">
+            <div class="headliner">
+                <h1> 
+                    Academic - ANSYS Engine Block FEA
+                </h1>
+                <p>
+                    This was my final project for my FEA class, awarded 115/100 and an informal fastest CAD model generator of the semester. 
+                    A component needs to be analyzed to ensure that stresses are under the given yield stress of 241 MPa. 
+                    The component is an engine block from an imaginary internal combustion engine. 
+                </p>
+            </div>
+            <figure class="cover">
+                <img class="cover" src="../photos/EngineBlock.JPG">
+                <figcaption> ANSYS Equivalent Stress Plot </figcaption>
+            </figure>
+            <div class="objectives">
+                <h3>
+                    Objectives:
+                </h3>
+                <ul>
+                    <li>CAD the component based on the drawing provided</li>
+                    <li>Import the CAD model to ANSYS workbench and apply a custom material profile</li>
+                    <li>Verify the engine will remain under yield stress based on a static pressure load</li>
+                    <li>Obtain deformation plot for additional information</li>
+                </ul>
+            </div>
+
+            <div class="challenges">
+                <h3>
+                    Challenges:
+                </h3>
+                <p>
+                    Most of the challenges arose from setting up ANSYS. 
+                    Having done Solidworks FEA before, the fixed boundary conditions and static pressure load was easy to do. 
+                    However, I had to learn how to define a custom material profile and import a Solidworks model to Ansys. 
+                </p>
+            </div>
+            <div class="results">
+                <h3>
+                    Results:
+                </h3>
+                <p>
+                    A static elasticity analysis was performed using ANSYS workbench to obtain the following results: 
+                </p>
+                <ul>
+                    <li> Deformation plot of engine block to determine if there would be any mating issues with other components </li>
+                    <li> Equivalent von mises stress plot with maximum von mises stress located to prove the engine block stays below yield stress </li>
+                    <li> Convergence study ensuring no accuracy error resulting from the node and element numbers used </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
