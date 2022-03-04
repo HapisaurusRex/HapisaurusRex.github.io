@@ -61,7 +61,7 @@ figure.cover{
     grid-area: photo;
 }
 .cover{
-    height: 60vh;
+    height: 40vh;
     width: auto;
 }
 .objectives{
@@ -105,12 +105,13 @@ figure.cover{
     text-transform: capitalize;
 }
 
-
 .contact{
     display: grid;
+    height: 30vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "map contact";
     padding: 5vw;
+    align-items: center;
 }
 .contact-info{
     display: grid;
