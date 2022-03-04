@@ -46,9 +46,9 @@ li.nav-links{
 }
 
 .summary-grid{
-    display: grid;
-    grid-template-areas: 'headliner headliner headliner headliner' 'photo photo photo photo' 'objectives objectives challenges challenges' 'results results results results';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;    
+    grid-template-areas: 'headliner headliner' 'photo photo' 'objectives challenges' 'results results';
+    grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     margin: 3rem;
 }
@@ -104,22 +104,27 @@ figure.cover{
     border-style: solid;
     text-transform: capitalize;
 }
-/*.contact{
+
+
+.contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "map contact"
+    grid-template-areas: "map contact";
+    padding: 5vw;
 }
 .contact-info{
-    grid-area: contact;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'email address' 'phone number';
+    justify-items: end;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-info .text{
+    justify-items: start;
+}
+.map{ 
+    -webkit-filter: grayscale(100%); 
 }
 
-.contact {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}*/
+
     

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> Shambler </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -9,57 +10,59 @@
     <body>
         <header>
             <nav>
-                <a class = "unselected-page" href="../index.html"> daniel shah </a>
+                <a class = "page" href="../index.html"> daniel shah </a>
                 <ul class="nav-links">
-                    <li class="nav-links"><a class = "unselected-page" href= "../about.html"> about me </a>              </li>
-                    <li class="nav-links"><a class = "selected-page" href="../List_Of_Projects.html"> projects </a>    </li>
-                    <li class="nav-links"><a class = "unselected-page" href="../contact.html"> contact </a>           </li>
+                    <li class="nav-links"><a class = "page" href= "../about.html"> about me </a>                    </li>
+                    <li class="nav-links"><a class = "page selected" href="../List_Of_Projects.html"> projects </a> </li>
+                    <li class="nav-links"><a class = "page" href="../contact.html"> contact </a>                    </li>
                 </ul>
             </nav>
         </header>
-        <h1> 
-            Independent - Shambler/Убойник (On pause)
-        </h1>
-        <p>
-            I grew up reading the metro books and playing the metro games, it always offered a different narrative to the ones 
-            I’ve encountered. I thought I could pay respects to Artyom finishing his journey (in Metro Exodus) 
-            by remaking the revolving shotgun, the Shambler (his most hated gun) :)
+        <div class="summary-grid">
+            <div class="headliner">
+                <h1> 
+                    Independent - Shambler/Убойник (On pause)
+                </h1>
+                <p>
+                    As a tribute to Artyom in the Metro books by Dmitry Glukhovsky, I decided to model his most untrusted weapon, Убойник. 
+                    So aptly named murderer when translated. A double action, revolving shell loaded shotgun made with scrap AK components.
+                    <br> <br>
 
-            Note: project on pause until I am done with undergraduate university
-        </p>
-        
-        <h2> 
-            Summary 
-        </h2>
-        <h3>
-            Objectives:
-        </h3>
-        <ul>
-            <li> CAD the Shambler from scratch keeping as much of the AK design the shotgun was based on </li>
-            <li> Add functionality to the gun, so that it can be operated as a CO2 operated airsoft replica </li>
+                    <br><br>
+                    *On pause until I am done with undergraduate university*
+                </p>
+            </div>
+            <figure class="cover">
+                <img class="cover" src="../photos/portfolio-1.JPG">
+                <figcaption> Screenshot of GitHub Respository </figcaption>
+            </figure>
+            <div class="objectives">
+                <h3>
+                    Objectives:
+                </h3>
+                <ul>
+                    <li> CAD the Shambler based on photos and in-game footage </li>
+                    <li> Fabricate the model so that can be operated as a gas operated airsoft replica </li>
+                </ul>
+            </div>
 
-        </ul>
-        <h3>
-            Challenges:
-        </h3>
-        <ul>
-            
-            <li> As mentioned by fire arms experts and the main character, Artyom himself, 
-                the gun is a safety nightmare. I have decided to stay within the airsoft realm because of it. </li>
-            <li> Guns are complex machines that need multiple test rigs and equipment to verify functionality, 
-                more time is required in CAD than just creating the model </li>
-        </ul>
-        <h3>
-            Results:
-        </h3>
-        <ul>
-            <li> A first draft cad model with most features vaguely created. 
-                Model currently matches most of the features in the original model, 
-                but time is required to add functionality to these CAD’ed components </li>
-            <li>
-                A test rig of the sliding shell loader/ejector has been created and will be 3D printed to verify the sliding mechanism works 
-                and experiment with spring configurations to obtain the self-loading feature shown in game. (see photo in gallery below)
-            </li>
-        </ul>
+            <div class="challenges">
+                <h3>
+                    Challenges:
+                </h3>
+                <ul>
+                    <li> Being a 'puppy-loving pacifist', I had to learn about gun mechanisms before the model could be made functional </li>
+                    <li> The significantly complex project forced me to create several test rigs focused on specific mechanisms </li>
+                </ul>
+            </div>
+            <div class="results">
+                <h3>
+                    Results (So FAR):
+                </h3>
+                <ul>
+                    <li> A first draft CAD model mostly matching the images in game </li>
+                    <li> A second draft with test rigs fabricated to add functionality </li>
+                    <li> The main test rig is the shotgun bolt loading and barrel rotating mechanism that is already 3D printed </li>
+                </ul>
     </body>
 </html>

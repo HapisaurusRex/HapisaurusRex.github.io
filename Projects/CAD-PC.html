@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> 1967 Pontiac GTO </title>
+        <title> CAD PC Watercooler</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -21,11 +21,12 @@
         <div class="summary-grid">
             <div class="headliner">
                 <h1> 
-                    Independent - 1967 Pontiac GTO Restoration
+                    Academic - PC Watercooler CAD Project
                 </h1>
                 <p>
-                    My first co-op was the first time I lived by myself, and I was inexperienced and bad cook. 
-                    I decided to efficiently solve this problem by volunteering to help a coworker, in exchange for food after work.
+                    This was my final project for the CAD and Manufacturing course I took. 
+                    The goal was to reverse engineer a complex/multi-part product and document the process. 
+                    I chose to reverse engineer an EKWB S240 CPU watercooler. 
                 </p>
             </div>
             <figure class="cover">
@@ -37,10 +38,10 @@
                     Objectives:
                 </h3>
                 <ul>
-                    <li> Restore a 1967 Pontiac GTO to working condition </li>
-                    <li> Mount the body to the frame</li>
-                    <li> Install fuel lines to the frame </li>
-                    <li> Prepare the car for paint</li>
+                    <li>CAD the component based on the drawing provided</li>
+                    <li>Import the CAD model to ANSYS workbench and apply a custom material profile</li>
+                    <li>Verify the engine will remain under yield stress based on a static pressure load</li>
+                    <li>Obtain deformation plot for additional information</li>
                 </ul>
             </div>
 
@@ -48,26 +49,23 @@
                 <h3>
                     Challenges:
                 </h3>
-                <ul>
-                    <li> Working on RC cars, I was very used to adjusting the car for the perfect angle, 
-                        since everything is heavier I had to first learn how to strategically handle tools and what tools suit real life application </li>
-                    <li> The tools were no longer just screw drivers. 
-                        I had to learn how to work with air tools, ratchets, sanding blocks, etc…</li>
-                    <li> I was not at a professional garage and everything we were doing was DIY, 
-                        I had to come up with a way to mount the body to the frame myself </li>
-                </ul>
+                <p>
+                    Most of the challenges arose from setting up ANSYS. 
+                    Having done Solidworks FEA before, the fixed boundary conditions and static pressure load was easy to do. 
+                    However, I had to learn how to define a custom material profile and import a Solidworks model to Ansys. 
+                </p>
             </div>
             <div class="results">
                 <h3>
                     Results:
                 </h3>
                 <p>
-                    The car was unfortunately finished after finishing my co-op but my contributions were: 
+                    A static elasticity analysis was performed using ANSYS workbench to obtain the following results: 
                 </p>
                 <ul>
-                    <li> De-rusted GTO body panels, chrome, and frame that were primed for paint, along with fiber glass molding to improve geometry and fit </li>
-                    <li> Mounted transmission connected to the drive shaft via rear axle </li>
-                    <li> An improvised mounting scheme to attach the body to the frame using wooden beams and floor jacks </li>
+                    <li> Deformation plot of engine block to determine if there would be any mating issues with other components </li>
+                    <li> Equivalent von mises stress plot with maximum von mises stress located to prove the engine block stays below yield stress </li>
+                    <li> Convergence study ensuring no accuracy error resulting from the node and element numbers used </li>
                 </ul>
             </div>
         </div>

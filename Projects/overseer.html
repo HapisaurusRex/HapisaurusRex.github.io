@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> Overseer </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -9,41 +10,67 @@
     <body>
         <header>
             <nav>
-                <a class = "unselected-page" href="../index.html"> daniel shah </a>
+                <a class = "page" href="../index.html"> daniel shah </a>
                 <ul class="nav-links">
-                    <li class="nav-links"><a class = "unselected-page" href= "../about.html"> about me </a>              </li>
-                    <li class="nav-links"><a class = "selected-page" href="../List_Of_Projects.html"> projects </a>    </li>
-                    <li class="nav-links"><a class = "unselected-page" href="../contact.html"> contact </a>           </li>
+                    <li class="nav-links"><a class = "page" href= "../about.html"> about me </a>                    </li>
+                    <li class="nav-links"><a class = "page selected" href="../List_Of_Projects.html"> projects </a> </li>
+                    <li class="nav-links"><a class = "page" href="../contact.html"> contact </a>                    </li>
                 </ul>
             </nav>
         </header>
-        <h1 class = "title"> 
-            Academic - Overseer 
-        </h1>
-        
-        <h2> 
-            Summary 
-        </h2>
-        <h3>
-            Objectives:
-        </h3>
+        <div class="summary-grid">
+            <div class="headliner">
+                <h1> 
+                    Academic - Overseer 
+                </h1>
+                <p>
+                    For my final intro to engineering project, my team chose to program an Arduino to address Sudden Infant Death Syndrome (SIDS). 
+                    Our restrictions were it had offer helpful functions towards our selected issue while remaining under the budget of $100.
+                </p>
+            </div>
+            <figure class="cover">
+                <img class="cover" src="../photos/portfolio-1.JPG">
+                <figcaption> Screenshot of GitHub Respository </figcaption>
+            </figure>
+            <div class="objectives">
+                <h3>
+                    Objectives:
+                </h3>
+                <ul>
+                    <li> Monitor infant breathing rate and heart rate without being medically invasive</li>
+                    <li> Alert on call medical personnel nearby with auditory alarm </li>
+                    <li> Provide a quick diagnosis of the infant's state via RGB led </li>
+                </ul>
+            </div>
 
-        <h3>
-            Challenges:
-        </h3>
-
-        <h3>
-            Results:
-        </h3>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qdYQa3vGVb4" title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <a href = "https://docs.google.com/document/d/18Smb2N9MdlcGVGjaaBALHqX2id-_lF1wTiGCgb0_7Oo/edit?usp=sharing"> Link to Academic Report</a>
-        <figure>
-            <img class="main-project-photo" src="../photos/OVR-1.png">
-            <img class = "main-project-photo" src="../photos/OVR-2.JPG">
-        </figure>
+            <div class="challenges">
+                <h3>
+                    Challenges:
+                </h3>
+                <ul>
+                    <li> The breathing sensor had to be self made as there wasn't really one designed for infants</li>
+                    <li> I came into this project with C++ experience but no arduino experience </li>
+                </ul>
+            </div>
+            <div class="results">
+                <h3>
+                    Results:
+                </h3>
+                <ul>
+                    <li> A variable resistance wire used to measure breathing rate based on the circumference change of the chest while breathing </li>
+                    <li> An RGB LED that displays different color codes based on breathing rate and/or heart rate failure </li>
+                    <li> A video demonstrating the device below:</li>
+                </ul>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qdYQa3vGVb4" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <a href = "https://docs.google.com/document/d/18Smb2N9MdlcGVGjaaBALHqX2id-_lF1wTiGCgb0_7Oo/edit?usp=sharing"> Link to Academic Report</a>
+                <figure>
+                    <img class="main-project-photo" src="../photos/OVR-1.png">
+                    <img class = "main-project-photo" src="../photos/OVR-2.JPG">
+                </figure>
+            </div>
+        </div>
     </body>
 </html>
 
