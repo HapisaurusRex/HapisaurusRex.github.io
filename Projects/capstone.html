@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> Vibration Damping Capstone </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -9,43 +10,62 @@
     <body>
         <header>
             <nav>
-                <a class = "unselected-page" href="../index.html"> daniel shah </a>
+                <a class = "page" href="../index.html"> daniel shah </a>
                 <ul class="nav-links">
-                    <li class="nav-links"><a class = "unselected-page" href= "../about.html"> about me </a>              </li>
-                    <li class="nav-links"><a class = "selected-page" href="../List_Of_Projects.html"> projects </a>    </li>
-                    <li class="nav-links"><a class = "unselected-page" href="../contact.html"> contact </a>           </li>
+                    <li class="nav-links"><a class = "page" href= "../about.html"> about me </a>                    </li>
+                    <li class="nav-links"><a class = "page selected" href="../List_Of_Projects.html"> projects </a> </li>
+                    <li class="nav-links"><a class = "page" href="../contact.html"> contact </a>                    </li>
                 </ul>
             </nav>
         </header>
-        <h1> 
-            Academic - Capstone Project
-        </h1>
-        <p>
-            Details coming soon !
-        </p>
-        
-        <h2> 
-            Summary 
-        </h2>
-        <h3>
-            Objectives:
-        </h3>
-        <ul>
-            <li> </li>
+        <div class="summary-grid">
+            <div class="headliner">
+                <h1> 
+                    Academic - Vibration Damping Capstone Project
+                </h1>
+                <p>
+                    This was my final project for the CAD and Manufacturing course I took. 
+                    The goal was to reverse engineer a complex/multi-part product and document the process. 
+                    I chose to reverse engineer an EKWB S240 CPU watercooler; which included a radiator, CPU cooling block, and fans modeled after the Corsair SP140 fan. 
+                </p>
+            </div>
+            <figure class="cover">
+                <img class="cover" src="../photos/CAP-1.jpg">
+                <figcaption> Final Prototype of Vibration Damper </figcaption>
+            </figure>
+            <div class="objectives">
+                <h3>
+                    Objectives:
+                </h3>
+                <ul>
+                    <li>Obtain documented tutorials on how to assemble the CAD assembly</li>
+                    <li>Demonstrate comprehension of Solidworks FEA </li>
+                    <li>Perform a sustainability analysis on a component </li>
+                </ul>
+            </div>
 
-        </ul>
-        <h3>
-            Challenges:
-        </h3>
-        <ul>
-            
-            <li> </li>
-        </ul>
-        <h3>
-            Results:
-        </h3>
-        <ul>
-            <li> </li>
-        </ul>
+            <div class="challenges">
+                <h3>
+                    Challenges:
+                </h3>
+                <ul>
+                    <li> Due to the proprietary nature of products, finding details and dimensions was much harder than the actual creation of these components </li>
+                    <li> Learned during the project, the tutorials required should be made after the component has been completed to minmize time spent on documentation </li>
+                </ul>
+            </div>
+            <div class="results">
+                <h3>
+                    Results:
+                </h3>
+                <p>
+                    A static elasticity analysis was performed using ANSYS workbench to obtain the following results: 
+                </p>
+                <ul>
+                    <li> Deformation plot of engine block to determine if there would be any mating issues with other components </li>
+                    <li> Equivalent von mises stress plot with maximum von mises stress located to prove the engine block stays below yield stress </li>
+                    <li> Convergence study ensuring no accuracy error resulting from the node and element numbers used </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
