@@ -42,7 +42,7 @@ li.nav-links{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vmin;
 }
 
 .summary-grid{
@@ -55,6 +55,10 @@ li.nav-links{
 .headliner{
     text-transform: capitalize;
     grid-area: headliner;
+}
+p.subtitle{
+    text-transform: none;
+    margin: 0px 1vmin 0px 1vmin;
 }
 
 figure.cover{
@@ -79,7 +83,7 @@ figure.cover{
 
 .link-button{
     border-style: solid;
-    border-color: hsl(199, 98%, 48%);
+    border-color: hsl(39, 100%, 44%);
     color: black;
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -92,7 +96,8 @@ figure.cover{
 }
 .link-button:hover{
     color: white;
-    background-color: hsl(199, 98%, 48%);
+    background-color: hsl(39, 100%, 44%);
+    /*hsl(199, 98%, 48%);*/
 }
 .link-button.address{
     width: 15em;
