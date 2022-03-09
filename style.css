@@ -60,6 +60,10 @@ p.subtitle{
     text-transform: none;
     margin: 0px 1vmin 0px 1vmin;
 }
+p.clean{
+    margin: 0px 5vmin 0px 5vmin;
+    text-align: justify;
+}
 
 figure.cover{
     grid-area: photo;
