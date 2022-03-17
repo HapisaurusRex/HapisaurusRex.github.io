@@ -59,6 +59,7 @@ li.nav-links{
 p.subtitle{
     text-transform: none;
     margin: 0px 1vmin 0px 1vmin;
+    text-align: justify;
 }
 p.clean{
     margin: 0px 5vmin 0px 5vmin;
@@ -74,20 +75,20 @@ figure.cover{
 }
 .objectives{
     grid-area: objectives;
-    text-align:left;
+    text-align: justify;
 }
 .challenges{
     grid-area: challenges;
-    text-align:left;
+    text-align: justify;
 }
 .results{
     grid-area: results;
-    text-align:left;
+    text-align: justify;
 }
 
 .link-button{
     border-style: solid;
-    border-color: hsl(39, 100%, 44%);
+    border-color: hsl(199, 98%, 48%);;
     color: black;
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -100,8 +101,8 @@ figure.cover{
 }
 .link-button:hover{
     color: white;
-    background-color: hsl(39, 100%, 44%);
-    /*hsl(199, 98%, 48%);*/
+    background-color: hsl(199, 98%, 48%);
+    /*hsl(39, 100%, 44%);*/
 }
 .link-button.address{
     width: 15em;
