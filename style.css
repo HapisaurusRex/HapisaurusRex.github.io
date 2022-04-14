@@ -59,7 +59,7 @@ li.nav-links{
 p.subtitle{
     text-transform: none;
     margin: 0px 1vmin 0px 1vmin;
-    text-align: justify;
+    text-align: center;
 }
 p.clean{
     margin: 0px 5vmin 0px 5vmin;
@@ -109,16 +109,22 @@ figure.cover{
 }
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,3fr) );
+    grid-template-columns: repeat(auto-fit, minmax(500px,3fr) );
     grid-gap: 2vh 2vh;
     padding: 2vw;
 }
+
+img.icon{
+    height: 15rem;
+    width: auto;
+}
+
 .project{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    height: 12rem; 
+    height: 30rem; 
     background-color: #f6f6f6;
     border-style: solid;
     border-radius: 2rem ;
