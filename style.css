@@ -1,174 +1,85 @@
-body{
-    background-color: #f6f6f6;
-    color: #111111;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    text-align: center;
+/* General Style Elements */
+:root{
+    --base-color:#F5EEDC;
+    --accent-color:#27548A;
+    --pop-color: #DDA853;
+}
+*{
+    font-family: 'Avenir', sans-serif;
+}
+.title-text{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.heading-text{
+    font-size: 2rem;
+}
+.desc-text{
+    font-size: 1.5rem !important;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111111;
-    border-style: none;
-    height: 2.2em;
+#content{
+    margin-top: 2vh;
+    min-width: 80vw;
 }
-
-ul.nav-links{
-    padding: 0;
-    margin: 0;
-}
-
-
-li.nav-links{
-    list-style-type: none;
-    display: inline;
-}
-
-.page{
-    color: #f6f6f6;
-    padding: 4vh 20px 4vh 20px;
-    margin: 0;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-}
-.page.selected{
-    background-color: #f6f6f6;
-    color: #111111;
-}
-
-#intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vmin;
-}
-
-.summary-grid{
-    display: grid;    
-    grid-template-areas: 'headliner headliner' 'photo photo' 'objectives challenges' 'results results';
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
-    margin: 3rem;
-}
-.headliner{
-    text-transform: capitalize;
-    grid-area: headliner;
-}
-p.subtitle{
-    text-transform: none;
-    margin: 0px 1vmin 0px 1vmin;
-    text-align: center;
-}
-p.clean{
-    margin: 0px 5vmin 0px 5vmin;
-    text-align: justify;
-}
-
-figure{
-    grid-area: photo;
-}
-.cover{
-    height: 40vh;
-    width: auto;
-}
-.objectives{
-    grid-area: objectives;
-    text-align: justify;
-}
-.challenges{
-    grid-area: challenges;
-    text-align: justify;
-}
-.results{
-    grid-area: results;
-    text-align: justify;
-}
-
-.link-button{
-    border-style: solid;
-    border-color: hsl(199, 98%, 48%);;
-    color: #111111;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    margin: 0 10px 0 10px;
-    text-decoration: none;
-    border-radius: 2rem ;
-    font-size: 1.5em;
-    min-width: 7em;
-    max-width: 20em;
-    max-height: 1.5em;
-}
-.link-button:hover{
-    color: white;
-    background-color: hsl(199, 98%, 48%);
-    /*hsl(39, 100%, 44%);*/
-}
-.link-button.address{
-    width: 15em;
-}
-.project-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px,3fr) );
-    grid-gap: 2vh 2vh;
-    padding: 2vw;
-    
-}
-
-img.icon{
+/* Project Page Style Elements */
+.icon{
     height: 15rem;
     width: auto;
 }
-
-.project{
+/* Navigation Bar Style Elements */
+nav{
+    background-color: var(--accent-color);
+    font-size: 1.5rem;
+}
+.nav-button, .nav-title{
+    background-color: var(--accent-color);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
+}
+.nav-button:hover, .nav-title:hover{
+    background-color: var(--pop-color);
+    color: var(--base-color) !important;
+    /* Fix for bold text shifting elements */
+    text-shadow: 1px 0 0 var(--base-color);
+}
+/* Home page Style Elements */
+#pfp{
+    border: transparent;
+    border-radius: 40px;
+}
+/* Contact Page Style Elements */
+#contact-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.contact-title {
     padding: 20px;
-    height: 30rem; 
-    background-color: #f6f6f6;
-    border-style: solid;
-    border-radius: 2rem ;
-    text-transform: capitalize;
+    min-width: 80px;
+    width: 20vw;
+    margin: 10px; 
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+    
 }
-
-.contact{
-    display: grid;
-    height: 30vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "map contact";
-    padding: 5vw;
-    align-items: center;
+.contact-button{
+    text-decoration: none;
+    padding: 20px;
+    width: 20vw;
+    min-width: 80px;
+    margin: 10px; 
+    border: solid 2px black;
 }
-.contact-info{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30vh;
-}
-
-.container {
-    position: relative;
-    overflow: hidden;
+.contact-button > a{
+    text-decoration: none;
+    color:purple;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-
+}
 .map{ 
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    width: 50vh;
+    height: 50vh;
     -webkit-filter: grayscale(100%); 
 }
 
