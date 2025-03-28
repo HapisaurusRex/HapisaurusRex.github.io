@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <title> Learn about Daniel </title>
+        <title> Bio </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand nav-title page desc-text" href="index.html"> Daniel Shah </a>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                        <a class = "nav-link nav-button page" href= "about.html"> about me </a>
-                        <a class = "nav-link nav-button page" href="List_Of_Projects.html"> projects </a> 
-                        <a class = "nav-link nav-button page" href="contact.html"> contact </a>  
-                        </div>
-                    </div>
-                </div>
+            <nav>
+                <a class = "page" href="index.html"> daniel shah </a>
+                <ul class="nav-links">
+                    <li class="nav-links"><a class = "page selected" href= "about.html"> about me </a>              </li>
+                    <li class="nav-links"><a class = "page" href="List_Of_Projects.html"> projects </a>    </li>
+                    <li class="nav-links"><a class = "page" href="contact.html"> contact </a>           </li>
+                </ul>
             </nav>
         </header>
-        <div class="container" id="content">
-            <div class="row">
-                <div class="col-md-12">
-                    <figure>
-                        <img class="img-fluid" src="photos/about-1.jpg">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    Recent mechanical engineering graduate from Northeastern University, passionate about creating tools and tech that help people everyday. 
+        <figure>
+            <img class="cover" src="photos/about-1.jpg">
+            <figcaption></figcaption>
+        </figure>
+        <p class="clean">
+            Recent mechanical engineering graduate from Northeastern University, passionate about creating tools and tech that help people everyday. 
             I currently work at Amazon Web Services on their dash cart product aimed at letting people skip the checkout line.
             <br><br>
             Thanks to my parents being traveling health scientists, I have gotten to experience a wide array of cultures on four continents growing up. Rapidly adapting to my environment, I strive to always be a team player wherever I am.  
             I recognize that there are many perspectives outside of my own paradigm and always try to accommodate them. They are key to approaching problems from a different angle. 
             <br><br>
             Throughout my studies, I developed my hands-on/prototyping skills. Having developed CAD, FEA, and machine shop tools during co-op, I served as the head prototype and CAD engineer during my capstone project.
-            I have recently taken an interest in programming, and am hoping to develop a solid foundation in the near future
-                </div>
-            </div>
-        </div>
+            I have recently taken an interest in programming, and am hoping to develop a solid foundation in the near future.
+            <br><br>
+        </P>
     </body>
 </html>
-
