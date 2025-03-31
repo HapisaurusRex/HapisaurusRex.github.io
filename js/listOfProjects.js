@@ -1,29 +1,49 @@
 import { projects } from "../data.js";
-
 const projectGrid = document.querySelector("#project-gallery");
-
 const saveProjectData = (data) => {
   localStorage.setItem("project-data", JSON.stringify(data));
 };
 
+// Create Project Card
+const createProjectCard = (project, index) => {
+  // Card Container
+  const card = document.createElement("div");
+  card.classList.add("project-card");
+  card.setAttribute("data-index", index);
 
-  const populateProjects = (projects) => {
+  // Project Title
+  const title = document.createElement("div");
+  title.classList.add("project-text");
+  title.textContent = project.name;
+  card.appendChild(title);
 
-    projects.forEach((project, i) =>{
-      const projectCard =   `<h3> ${project.name} </h3>
-                                <figure>
-                                        <img class="icon" src=${project.photo} alt="${project.name}">
-                                </figure>
-                                <a class="nav-button" href='./project-page.html' > Learn More </a>`
-            const div = document.createElement('div');
-            div.classList.add('col-md-4')
-            div.setAttribute('data-index', i)
-            div.innerHTML = projectCard
-            div.addEventListener('click', () => saveProjectData(project))
-            projectGrid.append(div)
-    })
+  // Project Icon
+  const figure = document.createElement("figure");
+  const image = document.createElement("img");
+  image.classList.add("img-fluid", "icon");
+  image.src = project.photo;
+  image.alt = project.name;
+  figure.appendChild(image);
+  card.appendChild(figure);
 
-  }
+  // Product Link
+  const link = document.createElement("a");
+  link.classList.add("nav-button");
+  link.href = "./project-page.html";
+  link.textContent = "Learn More";
+  card.appendChild(link);
 
-  populateProjects(projects)
+  card.addEventListener("click", () => saveProjectData(project));
 
+  return card;
+};
+
+// Main function to render all project cards into the grid
+const populateProjects = (projects) => {
+  projects.forEach((project, index) => {
+    const card = createProjectCard(project, index);
+    projectGrid.appendChild(card);
+  });
+};
+
+populateProjects(projects);

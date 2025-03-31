@@ -3,6 +3,11 @@
     --base-color:#F5EEDC;
     --accent-color:#27548A;
     --pop-color: #DDA853;
+
+    --temp: #251605;
+    --temp: #2F0601;
+    --temp: #735F3D;
+    --temp: #333;
 }
 *{
     font-family: 'Avenir', sans-serif;
@@ -24,8 +29,32 @@
 }
 /* Project Page Style Elements */
 .icon{
-    height: 15rem;
+    height: 20rem;
     width: auto;
+    border-radius: 20px;
+}
+.project-text{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+#project-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,3fr) );
+    grid-gap: 2vh 2vh;
+    padding: 2vw;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 30rem; 
+    text-transform: capitalize;
+    border-radius: 20px;
+    box-shadow: #aca6a6 0px 5px 15px;
 }
 /* Navigation Bar Style Elements */
 nav{
@@ -54,16 +83,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.contact-title {
-    padding: 20px;
-    min-width: 80px;
-    width: 20vw;
-    margin: 10px; 
-    background-color: transparent;
-    border: none;
-    pointer-events: none;
-    
-}
+
 .contact-button{
     text-decoration: none;
     padding: 20px;
@@ -71,6 +91,11 @@ nav{
     min-width: 80px;
     margin: 10px; 
     border: solid 2px black;
+}
+.contact-title {
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
 }
 .contact-button > a{
     text-decoration: none;
@@ -82,6 +107,110 @@ nav{
     height: 50vh;
     -webkit-filter: grayscale(100%); 
 }
+/* About Me Style Elements */
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-blurb{
+    margin: 10rem o;
+}
 
 
-    
+/* Grid layout */
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Heading */
+.headliner-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Subheading / Description */
+.subtitle p {
+    margin-bottom: 0.75rem;
+}
+
+/* Image styles */
+.cover {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Sections (Objectives, Challenges, Results) */
+section {
+    margin-top: 2rem;
+}
+
+
+/* project-card styles */
+.objectives-general,
+.challenges-general,
+.results-general {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.objectives-list li,
+.challenges-list li,
+.results-list li {
+    margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+/* Link button */
+.link-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+
+/* Embedded video */
+iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cover {
+        margin-bottom: 1rem;
+    }
+
+    .headliner-heading {
+        font-size: 2rem;
+    }
+}
